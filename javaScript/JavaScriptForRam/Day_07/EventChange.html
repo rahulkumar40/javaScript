@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try and Learn!</title>
+</head>
+<body>
+    <h1 id="ele1">Pikachu</h1>
+    <h1 id="ele2">Charizar</h1>
+    <h1 id="ele3">Mewtwo</h1>
+
+    <script>
+        // let a = document.
+        // let x = document.querySelector("#ele1")
+        // x.innerHTML = "Jig is .innerHTML";
+
+
+
+        // let x = document.getElementById("ele1");
+        // x.style.color = "blue"
+        // x.style.color= "green";
+        // x.style.background = "yellow"
+        // Event Listener. Start --->  1
+        let x = document.getElementById("ele1")
+        x.addEventListener("click", function(){
+            x.style.color = "red"
+            x.style.background = "yellow"
+        })
+
+        // Event Listener. Start ---> 2 after mouse leave
+        x.addEventListener("mouseleave", function(){
+            x.style.color = "black"
+            x.style.background = "white"
+        })
+
+
+        // Event Listener. Start ---> 1 befor 
+        let y = document.getElementById("ele2")
+        y.addEventListener("click", function(){
+            x.style.color = "orange"
+            x.style.background = "red"
+        })
+        // event Listener
+        x.addEventListener("mouseleave", function(){
+            x.style.color = "black"
+            x.style.background = "white"
+        })
+
+        // Event Listener. Start ---> 1 befor 
+        y.addEventListener("mousemove", function(){
+            y.style.color = "white"
+            y.style.background = "orange"
+        })
+
+
+        // Event Listener. Start ---> 1 befor 
+        y.addEventListener("mouseenter", function(){
+            y.style.color = "green"
+            y.style.background = "black"
+        })
+        // let n = document.querySelector("body")
+        // n.addEventListener("click", function(){
+        //     n.style.color = "white"
+        //     n.style.background = "black"
+        // })
+
+        // Event Listener. Start --->  1 befor 
+        let z = document.getElementById("ele3")
+        z.addEventListener("mousemove", function(){
+            z.style.color = "white"
+            z.style.background = "black";
+            z.innerHTML("Hanuman Ji");
+        })
+
+
+        // Event Listener. Start --->  1 befor 
+        z.addEventListener("click", function(){
+            x.style.color = "white"
+            x.style.background = "blue";
+            x.innerHTML = "Hanuman Ji";
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log("k");
+// let x = document.querySelector("h1");
+// console.log(x);
+// x.style.color = "blue";
+// x.style.background = "black";
+// setTimeout(function(){
+//     // for(let i=1; i<=10; i++){
+//         x.innerHTML = " i Changed after two "
+//     // }
+// }, 4000);
