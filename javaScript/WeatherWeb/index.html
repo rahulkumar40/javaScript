@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="e.g Patna" class="input-box">
+                <button class="search-button" id="searchBtn">
+                    <img src="/img/search-img.jpeg" alt="search-img" class="search-svg" >
+                </button>
+            </div>
+        </div>
+        
+        <div class="weather-body">
+
+            <div class="weater-conditaon">
+                <img src="/img/cloud.png" alt="cloud-img" class="cloud-svg" id="weater-img">
+                <div class="cloud-desc">
+                    <p class="weater-cel" id="temprature">0<sup>°C</sup></p>
+                    <p class="weater-desc" id="tempDesc">Light Rain</p>
+                </div>
+            </div>
+            <div class="weater-Humidity-speed">
+                <div class="weater-humidity">
+                    <div class="humidity-icon">
+                        <img src="img/rain drop.jpeg" alt="Rain-drop" class="drop-svg">
+                    </div>
+                    <dir class="weater-info">
+                        <p class="humidity-percentage" id="humidity">45%</p>
+                        <p class="name">Humidity</p>
+                    </dir>
+                </div>
+                <div class="weater-humidity">
+                    <div class="humidity-icon">
+                        <img src="img/mist.png" alt="Rain-drop" class="drop-svg">
+                    </div>
+                    <dir class="weater-info">
+                        <p class="humidity-percentage" id="wind-spedd">12Km/H</p>
+                        <p class="name">Wind Speed</p>
+                    </dir>
+                </div>
+            </div>
+        </div>
+        <div class="show">
+            <div class="location-not-found">
+                <h1 id="error-msg">
+                    Sorry, Location not found
+                </h1>
+                <img src="img/404.png" alt="img-svg-error">
+        </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

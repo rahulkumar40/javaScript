@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+body{
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+
+.container{
+    width:60% ;
+    height: min-content;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.input-box{
+    padding: 1rem;
+}
+.search-button{
+    background-color: #fff;
+    padding: 0.5rem;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+.search-svg{
+    width: 2rem;
+    background-color: none;
+    border-radius: 30%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.search-button:hover{
+    border: 1px solid gray;
+    transform: scale(1.04);
+}
+
+.weather-body{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+
+}
+.weater-conditaon{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.cloud-svg{
+    width: 15rem;
+    height: 15rem;
+}
+.cloud-desc{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1px;
+}
+.cloud-desc span{
+    font-size: 3rem;
+
+}
+
+
+.weater-Humidity-speed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.weater-humidity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop-svg{
+    width: 3rem;
+    height: 3rem;
+}
+
+.weater-info{
+    margin-left: 0.5rem;
+}
+.humidity-percentage{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 0%;
+}
+
+.location-not-found{
+    
+    width: 400px;
+    padding: 1rem 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.location-not-found img{
+    width:20rem;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
