@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#panel {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.pbutton-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #87ceeb;
+    border-radius: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#pbutton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+#score-board {
+    margin: 20px;
+}
+
+.control-button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.control-button:hover {
+    background-color: #45a049;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 600px) {
+    #panel {
+        width: 150px;
+        height: 150px;
+    }
+
+    .pbutton-box {
+        width: 75px;
+        height: 75px;
+    }
+}
