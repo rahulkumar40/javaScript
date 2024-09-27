@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Project 05</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="head">Password Generator</h2>
+      <div class="inputBox">
+        <input type="text" class="passBox" disabled id="passBox" />
+        <span>
+          <img
+            src="copy-svgrepo-com (1).svg"
+            alt=""
+            class="copy-svg"
+            id="copy-icon"
+          />
+        </span>
+      </div>
+      <input
+        type="range"
+        min="1"
+        max="30"
+        value=""
+        class="range-color"
+        id="inputSlid"
+      />
+      <div class="row">
+        <p>Password Lenght</p>
+        <span class="pass-len" id="sliderValue"></span>
+      </div>
+
+      <div class="check-box row">
+        <label for="lowercase">Include lowercase latter (a-z) </label>
+        <input type="checkbox" name="lowercase" id="lowercase" />
+      </div>
+      <div class="check-box row">
+        <label for="uppercase">Include uppercase latter (A-Z) </label>
+        <input type="checkbox" name="uppercase" id="uppercase" />
+      </div>
+      <div class="check-box row">
+        <label for="numbers">Include number (0-9) </label>
+        <input type="checkbox" name="numbers" id="numbers" />
+      </div>
+      <div class="check-box row">
+        <label for="symbol">Include symbol (_, @, #)</label>
+        <input type="checkbox" name="symbol" id="symbol" />
+      </div>
+      <div class="button-b">
+        <button class="genBtn" type="button" id="genBtn">
+          Generate Password
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
