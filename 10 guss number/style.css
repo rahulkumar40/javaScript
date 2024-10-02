@@ -1,0 +1,82 @@
+/* Basic styling for the body */
+body {
+    background-color: #f94144;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Wrapper for the game content */
+#wrapper {
+    background-color: #f3722c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Styling for headings and paragraphs */
+h1 {
+    color: #000;
+    font-size: 36px;
+}
+
+.desc{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Form styling */
+.form input[type="text"] {
+    font-size: 1.5rem;
+    width: 150px;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 5px ;
+    margin: 1rem 0;
+}
+
+.form input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffa500;
+    color: #fff;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #ff7500;
+}
+
+.resultParas p {
+    font-size: 16px;
+}
+
+.lowOrHi {
+    font-size: 20px;
+    color: #ff4500;
+    margin-top: 20px;
+}
+
+.message-success {
+    color: #03071e;
+}
+
+.message-fail {
+    color: #ff0000;
+}
+
+.game-over {
+    margin-top: 20px;
+    color: #ffa500;
+}
