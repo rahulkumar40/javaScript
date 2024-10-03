@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>BMI Calculator</h1>
+    <form id="bmi-form">
+      <div class="unit-switcher">
+        <label>
+          <input type="radio" name="units" value="metric" checked /> Metric
+        </label>
+        <label>
+          <input type="radio" name="units" value="imperial" /> Imperial
+        </label>
+      </div>
+      <div class="input-group">
+        <label for="height">Height:</label>
+        <input type="number" id="height" placeholder="cm or inches" />
+      </div>
+      <div class="input-group">
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" placeholder="kg or lbs" />
+      </div>
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="results"></div>
+    <div id="weight-guide" class="desc-container">
+      <h3>BMI Weight Guide</h3>
+      <p>Underweight: Less than 18.5</p>
+      <p>Normal weight: 18.5 - 24.9</p>
+      <p>Overweight: 25 - 29.9</p>
+      <p>Obesity: 30 or greater</p>
+      <p>Metric: cm & kg</p>
+      <p>Imperial: inches & lbs/pounds </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
